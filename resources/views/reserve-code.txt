@@ -1,0 +1,11 @@
+<!-- @if (count($cart))
+{{$cart}}
+@endif -->
+
+/add-to-cart/{{$product->id}}
+
+@if (count($distributors))
+@foreach ($distributors as $distributor)
+@include('distributor-item')
+@endforeach
+@endif
